@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px grey;
+}
+
+h1 {
+    font-size: 22px; 
+    margin-bottom: 10px;
+}
+
+fieldset {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+.bloque {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#precio {
+    width: 80px;
+}
+
+span {
+    margin-right: 20px;
+}
+
+#botón {
+    padding: 8px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+#botón:hover {
+    color: white;
+    background-color: black;
+}

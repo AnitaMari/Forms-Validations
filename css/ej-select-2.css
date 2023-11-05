@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px 5px rgb(193, 191, 191);       
+}
+
+fieldset {
+    padding: 15px;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 3px;
+}
+
+input, select {
+    margin-bottom: 20px;
+    padding: 5px;
+} 
+
+/* input, select option:first-child {
+    text-align: center;
+} */
+
+/* ESTE CÓDIGO LO HICE POR ERROR CON INLINE-BLOCK CUANDO TENÍA QUE PONER BLOCK.
+FUNCIONÓ PERO FUE COMPLICARME LA VIDA INUTILMENTE */
+/* label, input, select {
+    display: inline-block;    
+    width: 25%;
+    min-width: 115px;
+    margin-right: 40%;
+}
+
+label {
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+input, select {
+    margin-bottom: 20px;
+    padding: 3px;
+    text-align: center;
+} */

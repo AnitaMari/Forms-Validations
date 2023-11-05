@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Papel</title>
+    <link rel="stylesheet" href="css/form-papel.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <!-- ***EMPIEZA FIELDSET 1*** -->
+        <fieldset id="set1">
+            <div>
+                <label for="nombre">D/Dª</label>
+                <input type="text" name="nombre" id="nombre" value="">
+
+                <label for="DNI">DNI</label>
+                <input type="text" name="DNI" id="DNI" value="">
+            </div>
+
+            <div>
+                <label for="domicilio">Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio" value="">
+
+                <label for="Localidad">Localidad</label>
+                <input type="text" name="Localidad" id="Localidad" value="">
+
+                <label for="CP">C.P.</label>
+                <input type="number" name="CP" id="CP" value="">
+            </div>
+
+            <div>
+                <label for="Provincia">Provincia</label>
+                <select name="provincia" id="provincia">
+                    <optgroup label="Provincia">
+                        <option disabled selected>-- elige una opción --</option>
+                        <option value="Almería">Almería</option>
+                        <option value="Cádiz">Cádiz</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Granada">Granada</option>
+                        <option value="Huelva">Huelva</option>
+                        <option value="Jaén">Jaén</option>
+                        <option value="Málaga">Málaga</option>
+                        <option value="Sevilla">Sevilla</option>
+                    </optgroup>
+                </select>
+
+                <label for="Teléfono">Teléfono</label>
+                <input type="tel" name="Teléfono" id="Teléfono" value="">
+
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" value="">
+            </div>
+            <p>*Campo no obligatorio</p>
+        </fieldset>
+
+         <!-- ***EMPIEZA FIELDSET 2*** -->
+        <fieldset id="set2">
+            <legend><span><strong>SOLICITA </strong></span><em>(Marque el derecho que desea ejercitar)</em></legend>
+
+            <p>
+                <input type="checkbox" value="derecho-acceso" id="derecho-acceso" name="derecho-acceso">
+                <label for="derecho-acceso">Ejercitar el <a href="#">derecho de acceso</a> a sus datos de carácter personal</label>
+            </p>
+
+            <p class="tab">
+                <input type="checkbox" value="info-postal" id="info-postal" name="info-postal">
+                <label for="info-postal">Solicitando que se le remita dicha información a su dirección postal</label>
+            </p>
+
+            <p class="tab">
+                <input type="checkbox" value="info-email" id="info-email" name="info-email">
+                <label for="info-email">Solicitando que se le remita dicha información a su dirección de correo electrónico</label>
+            </p>
+
+            <p>
+                <input type="checkbox" value="derecho-rect" id="derecho-rect" name="derecho-rect">
+                <label for="derecho-rect">Ejercitar el <a href="#">derecho de Rectificación</a> de los siguientes datos de carácter personal en el sentido que se indica a continuación:</label>
+            </p>
+
+            <textarea name="mensaje" id="mensaje"></textarea>
+        </fieldset>
+        
+        <input type="submit">
+
+    </form>
+    
+</body>
+</html>

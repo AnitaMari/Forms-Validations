@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desplegable Select</title>
+    <link rel="stylesheet" href="css/select-desplegable.css">
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <h1>Formulario con Select</h1>
+        <label for="provincia">Elige provincia</label>
+        <select name="provincia" id="provincia">
+            <!-- si no pongo size se ve el primero, si pongo un número se ven desplegados ese número size="8" por ejemplo-->
+            <!-- coge la longitud del elemento más largo -->
+            <optgroup label="Andalucía">
+                <option value="Almería">Almería</option>
+                <option value="Cádiz">Cádiz</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Granada">Granada</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Jaén">Jaén</option>
+                <option value="Málaga">Málaga</option>
+                <option value="Sevilla">Sevilla</option>
+            </optgroup>
+
+            <optgroup label="Murcia">
+                <option value="Murcia">Murcia</option>
+            </optgroup>
+
+            <optgroup label="Valencia">
+                <option value="Alicante">Alicante</option>
+                <option value="Castellón de la Plana">Castellón de la Plana</option>
+                <option value="Alicante">Alicante</option>
+            </optgroup>
+        </select>
+
+
+    </form>
+    
+</body>
+</html>

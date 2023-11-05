@@ -1,0 +1,17 @@
+/* No me dio tiempo de aplicar css, pero básicamente con solo html queda como el del ejemplo. */
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+    max-width: 500px;
+    padding: 1.2em;
+    box-shadow: 0 0 10px 5px grey;
+    margin: 1.2em auto;
+  
+}
+

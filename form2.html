@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <link rel="stylesheet" href="css/form2.css">
+</head>
+
+<body>
+    <!-- se pone id por si hubiera otro, es una buena costumbre, pero aquí no hace falta en realidad -->
+    <form action="enviar.html" id="form2" method="post">
+        <h1>Get Started</h1>
+
+        <div class="first">
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" placeholder="Your name" value="" required>
+        </div>
+    
+        <div class="second">
+            <label for="email">Email*</label>
+            <input type="text" name="email" id="email" placeholder="Your email" value="" required>
+        </div>
+    
+        <div class="budget">
+            <label for="budget">Budget*</label>
+            <input type="text" name="budget" id="budget" placeholder="Choose..." value="" required>
+        </div>
+      
+        <div class="textarea">
+            <label for="message">Message* </label>
+            <textarea name="message" id="message" placeholder="Write your message"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" id="botón" value="SEND MESSAGE"> 
+        </div>  
+     
+    </form>  
+</body>
+</html>

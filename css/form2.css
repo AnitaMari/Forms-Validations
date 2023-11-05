@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {    
+    display: flex;   
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-right: 0px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 5px #cbcbcb; 
+}
+
+h1 {
+    width: 100%;
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+div.first, div.second {
+    width: 47%
+}
+
+input {
+    width: 90%;
+}
+
+div.textarea, div.budget {
+    width: 99%;
+}
+
+input, textarea {
+    display: block;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+label {
+    color: grey;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: black;    
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+}
+
+textarea {
+    width: 90%;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+div #botón {    
+    width: 150px; 
+    height: 30px; 
+    padding-top: 8px; 
+    background-color: rgb(250, 64, 35);
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    padding-left: 0;
+    font-weight: 540;
+    letter-spacing: 1.5px;
+    border: none;
+    margin-right: 2.5%;
+    font-size: 12px;  
+    box-shadow: 5px 5px 5px #cbcbcb; 
+}
+
+#botón:hover {
+    padding-top: 6px; 
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* ****EMPIEZAN LAS MEDIA QUERIES**** */
+@media (max-width: 600px) {
+    div.first, div.second, div.budget, div.textarea {
+        width: 100%;        
+    }
+}

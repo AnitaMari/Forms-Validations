@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con Select CV</title>
+    <link rel="stylesheet" href="css/ej-select-2.css">
+</head>
+
+<body>
+    
+    <form action="" method="post">
+        <h1>Rellena tu CV</h1> 
+        <!-- fieldset pone un cuadro alrededor con el nombre en legend superpuesto -->
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="provincia">Provincia</label>
+            <select name="provincia" id="provincia">
+                <option disabled selected>- Selecciona -</option>
+                <option value="Almería">Almería</option>
+                <option value="Cádiz">Cádiz</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Granada">Granada</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Jaén">Jaén</option>
+                <option value="Málaga">Málaga</option>
+                <option value="Sevilla">Sevilla</option>
+            </select>
+
+            <label for="fecha-nac">Fecha de nacimiento:</label>
+            <input type="date" name="fecha-nac" id="fecha-nac" value="">
+
+            <label for="temas-int">Temas de interés:</label>
+            <select name="temas-int" id="temas-int">
+                <option disabled selected>- Selecciona -</option>
+                <option value="Educación">Educación</option>
+                <option value="Viajes">Viajes</option>
+                <option value="Economía">Economía</option>
+                <option value="Nuevas Tecnologías">Nuevas Tecnologías</option>
+            </select>
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>

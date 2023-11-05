@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web</title>
+    <link rel="stylesheet" href="css/checkbox-radio2.css">
+</head>
+
+<body>
+    <form action="" method="get">
+        <h1>Formulario de registro</h1>
+
+        <p>
+            <label for="nombre" id="nombre" value="">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" value="" maxlength="50">
+        </p>
+
+        <p>
+            <label for="apellidos" id="apellidos" value="">Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos" value="" maxlength="50">
+        </p>
+
+        <p>
+            <span>Sexo:</span>
+            <input type="radio" name="sexo" value="mujer" id="mujer">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="sexo" value="hombre" id="hombre">
+            <label for="hombre">Hombre</label>
+        </p>
+
+        <p>
+            <label for="email" id="email" value="">Correo: </label>
+            <input type="text" id="correo" name="correo" value="" maxlength="50" required>
+        </p>
+
+        <p>
+            <input type="checkbox" value="información" id="información" name="información" checked>
+            <label for="información">Deseo recibir información sobre novedades y ofertas</label>
+        </p>
+
+        <p>
+            <input type="checkbox" value="prot-datos" id="prot-datos" name="prot-datos" required>
+            <label for="prot-datos">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+        </p>
+
+        <p>
+            <input type="submit" id="botón" value="Enviar"> 
+        </p> 
+        
+
+    </form>
+    
+</body>
+</html>

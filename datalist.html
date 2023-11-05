@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <label for="pais">Selecciona tu país: </label>
+
+        <!-- DATALIST es como una barra de búsqueda y select juntos. Escribes algún caracter y te aparecen las palabras que las contengan -->
+        <input type="text" name="pais" id="pais" list="paises">
+        <datalist id="paises">
+            <option value="España"></option>
+            <option value="Italia"></option>
+            <option value="Portugal"></option>
+            <option value="Grecia"></option>
+            <option value="Países Bajos"></option>
+            <option value="Francia"></option>
+            <option value="Bélgica"></option>
+            <option value="Alemania"></option>
+            <option value="Suecia"></option>
+        </datalist>
+
+    </form>
+</body>
+</html>

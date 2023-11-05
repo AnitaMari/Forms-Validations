@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* para controlar que vayan en lineas independientes: */
+input {
+    display: inline-block;
+    width: 5%;
+    margin: 3px 0;
+}
+
+label {
+    display: inline-block;
+    width: 92%;
+    margin: 3px 0;
+}

@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px 5px #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    margin: 5px auto;
+    margin-top: 20px;
+    width: 45%;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    background-color: #ccc;
+    width: 120px;
+}
+
+input[type="submit"]:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Por defecto ocultamos los símbolos */
+.check1 {
+    display: none;
+}
+
+/* Mostramos el primer check, únicamente cuando el primer campo es válido */
+input[type="password"]:valid ~ .check1{
+   display: inline;
+   color: green;
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        display: block;
+        width: 100%;
+    }
+
+    label, input {
+        width: 100%;
+    }
+}
+

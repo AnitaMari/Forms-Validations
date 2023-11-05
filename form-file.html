@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form File</title>
+    <link rel="stylesheet" href="css/form-file.css">
+</head>
+
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <h1>Rellena tu CV</h1>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="" maxlength="30" size="30">
+            <!-- Poniendo el size aunque ponga la pantalla más pequeña no se mueve y se adapta. -->
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" value="" maxlength="80">
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="password" name="password" value="">
+
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" value="">
+        </div>
+
+        <p>Sexo</p>
+    
+        <p>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label>
+        </p>
+
+        <p>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label>
+        </p>
+    
+        <p>
+            <label for="foto">Incluir mi foto</label>
+            <!-- Cuando adjuntemos un archivo no olvidar poner enctype en form arriba, el accept se podría poner también allí pero mejor aquí por si hubiera más tipos de archivos para adjuntar. -->
+            <input type="file" name="foto" id="foto" accept=".jpg, .jpeg, .png">
+            <!-- no hace falta poner value -->
+        </p>
+
+        <input type="checkbox" name="suscribir" id="suscribir" value="" checked>
+        <label for="suscribir">Suscribirme al boletín de novedades.</label>
+
+        <p>
+            <input type="submit" id="botón1" value="Guardar cambios" >
+            <input type="button" id="botón2" value="Borrar los datos introducidos">
+        </p>
+
+    </form>
+    
+</body>
+</html>

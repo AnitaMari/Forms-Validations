@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 80%;
+    max-width: 620px;
+    min-width: 375px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px 5px grey;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+div label, div input {
+    display: block;
+}
+
+div #apellidos {
+    width: 100%;
+    max-width: 350px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p label, p input {
+    display: inline;
+}
+
+#botón1, #botón2 {
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#botón1:hover, #botón2:hover {
+    color: white;
+    background-color: black;
+}

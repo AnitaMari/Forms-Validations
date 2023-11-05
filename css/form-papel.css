@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 90%;
+    margin: 20px auto;
+    margin-top: 40px;
+    border: 1px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ***EMPIEZA FIELDSET 1***  */
+fieldset {
+    padding: 10px;
+    border: 1px solid black;
+    width: 700px;
+}
+
+input, select {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px dotted black;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+select {
+    border: none;
+    border-bottom: 1px dotted black;
+} 
+
+form input:focus, form textarea:focus, form select:focus {
+    outline: none;
+}
+
+#nombre {
+    width: 62%;
+}
+
+#DNI {
+    width: 25%;
+}
+
+#domicilio {
+    width: 35%;
+}
+
+#Localidad {
+    width: 24%;
+}
+
+#CP {
+    width: 11%;
+} 
+
+#provincia {
+    width: 22%;
+} 
+
+#Teléfono {
+    width: 16.5%;
+} 
+
+#email {
+    width: 30%;
+} 
+
+#set1 p {
+    color: grey;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* ****EMPIEZA FIELDSET 2***** */
+#set2 {
+    margin-top: 20px;
+    border: none;
+    appearance: none;
+
+}
+
+#set2 legend {
+    text-align: center;
+}
+
+span {
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    border-right: none;
+    border-left: none;
+    border-width: 2PX;
+    margin-top: 15px;
+}
+
+p.tab {
+    margin-left: 35px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: auto;
+    margin: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+/* ***EMPIEZAN LAS MEDIA QUERIES*** */
+
+@media (max-width: 750px) {
+    fieldset {
+        width: 500px;
+    }
+    #nombre {
+        width: 89%;
+    }
+    
+    #DNI {
+        width: 90%;
+    }
+    
+    #domicilio {
+        width: 82.5%;
+    }
+    
+    #Localidad {
+        width: 82%;
+    }
+    
+    #CP {
+        width: 90%;
+    } 
+    
+    #provincia {
+        width: 30%;
+        margin-right: 50%;
+    } 
+    
+    #Teléfono {
+        width: 84%;
+    } 
+    
+    #email {
+        width: 87%;
+    }
+}
+
+@media (max-width: 550px) {
+    fieldset {
+        width: 90%;
+    }
+    input, label, select {
+        display: block;
+        width: 100%!important;
+        margin-bottom: 15px;
+    }
+}

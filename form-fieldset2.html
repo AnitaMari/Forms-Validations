@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form con Fieldset 2</title>
+
+    <link rel="stylesheet" href="css/normalize.css">    
+
+    <!-- Link para utilizar FontAwesome 6  -->
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Default" disabled="" href="/css/app-937c1ff7d52fd6f78dd9322599e2b5d4.css?vsn=d">
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-2cb75d54de7a2cbae84bbe77a389bb5d.css?vsn=d">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
+
+    <link rel="stylesheet" href="css/form-fieldset2.css">
+</head>
+
+<body>
+   
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Alta en el servicio</legend>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" value="">
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" value="">
+
+            <label for="DNI">DNI</label>
+            <input type="text" name="DNI" id="DNI" value="">                     
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña" value="" placeholder="Mínimo 8 car. Aa0-9#$" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+            <i class="fa-duotone fa-check-double check2"></i>    
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label for="Teléfono">Teléfono</label>
+            <input type="tel" name="Teléfono" id="Teléfono" value="">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="">
+            
+            <label for="dirección">Dirección</label>
+            <input type="text" name="dirección" id="dirección" value="">
+
+            <label for="CP">C.P.</label>
+            <input type="number" name="CP" id="CP" value="">
+        </fieldset>
+
+        <input type="submit" id="botón" value="Darme de alta">
+    </form>
+    
+
+</body>
+</html>
